@@ -1,0 +1,157 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+body {
+    background-color: #181818;
+    font-size: .9rem;
+}
+
+.subTitle {
+    font-size: 0.8em;
+    color:#858585;
+}
+
+.perfil {
+    display: flex;
+    padding: 24px;
+}
+
+.perfil .gameImg img {
+    border-radius: 20%;
+    width: 90px;
+    height: 90px;
+    
+}
+
+.perfil .perfilInfo {
+    display: grid;
+    margin: 0px 20px 20px 20px;
+}
+
+.overflow {
+    border: 0px solid black;
+    overflow-x: auto;
+    padding-left: 24px;
+}
+
+.basicInfo {
+    display: flex;
+    width: 150%;
+    
+}
+
+.basicInfo .infoItens {
+    display: inline-block;
+    width: 140px;
+    height: 64px;
+    border: 0px solid black;
+    text-align: center;
+}
+
+.install {
+    height: 64px;
+    padding: 0px 24px;
+    text-align: center;
+}
+
+.install button {
+    width: 100%;
+    height: 70%;
+    background-color: #0E7F2E;
+    border: 0px;
+    border-radius: 100px;
+}
+
+.imgs {
+    display: flex;
+    gap: 12px;
+}
+
+img {
+    border-radius: 10px;
+}
+
+img:hover {
+    position: fixed;
+    top: 50%;
+    left: 0%;
+    transform: translate( 0% , -50%);
+    height: 300px;
+    width: 100vw;
+}
+
+.horizontal {
+    width: 270px;
+    height: 170px;
+}
+
+.vertical {
+    height: 170px;
+    width: 105px;
+}
+
+.infoGame {
+    display: grid;
+    margin: 24px;
+}
+
+.infoGame .info {
+    display: flex; 
+    margin: 12px 0px;
+    justify-content: space-between;
+}
+
+.rate {
+    display: grid;
+    margin: 0px 24px;
+}
+
+.rate .stars {
+    display: flex;
+    justify-content: space-between;
+    margin: 24px 4px;
+}
+
+
+.avaliacoes {
+    margin: 0px 24px;
+}
+
+.titleRate {
+    display: flex;
+    justify-content: space-between;
+    margin: 12px 0px;
+}
+
+.comments {
+    margin: 0px 24px;
+}
+
+.perfilCom {
+    margin: 12px 0px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.perfilCom .perfilImg {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.perfilCom .perfilInfos {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.commentText {
+    margin: 12px 0px;
+}

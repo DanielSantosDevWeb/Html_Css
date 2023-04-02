@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Links</title>
+    <style>
+        @font-face {
+            font-family: 'space' ;
+            src: url('Other Space 1.ttf') format('truetype')
+        }
+        div {
+            text-align: left;
+            background-color: powderblue;
+            border: 2px solid black;
+            width: 300px;
+            
+        }
+        p {
+            text-align: center;
+        }
+        a {
+            
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+            text-decoration-color: #000000;
+            color: green;
+            
+        }
+        a:visited {
+            color: none;
+        }
+        #menu {
+            display: none;
+        }
+        div:hover > #menu {
+            display: block;
+        }
+        a::before {
+            font-family: space, serif;
+            content: ">A";
+            font-weight: bolder;
+        }
+        a::after {
+            content: " <"
+            
+        }
+        
+        
+    </style>
+</head>
+
+<body>
+    
+    <h1>Pseudo Clases: Links</h1>
+    <div>
+        
+    <p id="mostrar">MOSTRAR MENU</p>
+    
+    <ul id="menu"> 
+        <li><a href="">Link para o youtube</a></li>
+        <li><a href="instagram.com">Link para o Instagram </a></li>
+        <li><a href="twitter.com">Link para o twitter</a></li>
+    </ul>
+    
+    </div>
+</body>
+
+</html>

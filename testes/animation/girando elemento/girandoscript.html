@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>girando segundo</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        div {
+            margin: auto;
+            height: 150px;
+            width: 3px;
+            background: black;
+            margin-bottom: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Girando elemento</h1>
+    </header>
+    
+    <div id="linha">
+    
+    </div>
+    <script>
+        var div = document.getElementById('linha')
+        
+        var n1 = 0
+        
+        
+        function girar() {
+            n1 += 6
+            
+            var graus = n1 + 'deg';
+            
+            div.style.transform = 'rotate(' + graus + ')'
+            
+        }
+        setInterval(girar , 1000 )
+    
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #0D1570;
+    padding: 10px;
+}
+
+h1 {
+    
+    color: white;
+    font-size: 3em;
+    margin: 30px auto;
+    text-align: center;
+    width: 300px;
+}
+
+h3 {
+    margin: 10px 10px;
+}
+
+form {
+    background-color: #EDEDED;
+    margin: auto;
+    min-width: 300px;
+    max-width: 800px;
+    padding: 5px;
+    border-radius: 10px;
+    
+}
+
+fieldset {
+    padding: 5px;
+}
+
+fieldset legend {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+label , input {
+    margin: 4px 0px;
+}
+
+#telnumber , #password , #cep {
+    width: 80px;
+}

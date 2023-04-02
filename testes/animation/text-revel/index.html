@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Text revel</title>
+    <style>
+        body {
+            height: 100vh;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+        }
+        .box {
+            width: 300px;
+            height: 60px;
+            display: grid;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            
+        }
+        
+        p {
+            animation: texto 2s forwards;
+            animation-delay:1s;
+            font-size: 3em;
+            font-weight: bolder;
+            text-align: center;
+            margin: 0px;
+            padding: 0px;
+            opacity: 0;
+        }
+        .revel {
+            animation: anima 3s ;
+            background-color: #4300FF;
+            width: 300px;
+            height: 60px;
+            position: absolute;
+            left: -300px;
+        }
+        
+        @keyframes texto {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes anima {
+            0% {
+                transform: translateX(0%)
+            }
+            
+            50% {
+                transform: translateX(100%)
+            }
+            
+            100% {
+                transform: translateX(200%)
+            }
+            
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="revel"> </div>
+        <p class="text">Text Revel</p>
+    </div>
+</body>
+
+</html>

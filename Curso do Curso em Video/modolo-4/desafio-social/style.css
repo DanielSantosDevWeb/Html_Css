@@ -1,0 +1,88 @@
+
+
+body {
+    background-image: url("imagens/fundo-madeira.jpg");
+    background-size: cover ;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+
+.logo {
+    display:inline ;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 100%;
+    box-shadow: 2px 2px 2px #000000;
+}
+
+.logo:hover {
+    border: 1px solid white;
+    box-shadow: 0px 0px 0px #000000;
+    transform: translate(-5 , -5);
+    transition: box-shadow 1s;
+}
+
+#home {
+    background-image: url("imagens/logo-home.jpg");
+    background-size:100% 100%;
+    top: 10px;
+    left: 85%;
+    
+}
+#facebook {
+    background-image: url("imagens/logo-facebook.jpg");
+    background-size: 100% 100%;
+    top: 70px;
+    left: 85%;
+
+}
+#instagram {
+    background-image: url("imagens/logo-instagram.jpg");
+    background-size: 100% 100%;
+    top: 130px;
+    left: 85%;
+
+}
+#twitter {
+    background-image: url("imagens/logo-twitter.jpg");
+    background-size: 100% 100%;
+    top: 190px;
+    left: 85%;
+
+}
+#youtube {
+    background-image: url("imagens/logo-youtube.jpg");
+    background-size: 100% 100%;
+    top: 250px;
+    left: 85%;
+
+}
+#github {
+    background-image: url("imagens/logo-github.jpg");
+    background-size: 100% 100%;
+    top: 310px;
+    left: 85%;
+
+}
+
+#celular {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60% , -50%);
+    background-image: url("imagens/frame-iphone.png");
+    background-size: 100% 100%;
+    width: 40vh;
+    height: 77vh;
+
+}
+
+#iframe {
+    transform: translate(9% , 17%);
+    width: 34vh;
+    height: 58vh;
+}

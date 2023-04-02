@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tabelas responsivas</title>
+    <style>
+        body {
+            text-size: 1.5em;
+        }
+        h1 {
+            text-align: center;
+        }
+        table {
+            
+            border-collapse: collapse;
+        }
+        caption {
+            padding: 10px;
+            border:1px solid black;
+        }
+        td, th {
+            border:1px solid black;
+            padding:1px 5px;
+        }
+        
+        #container {
+            
+        }
+        
+        .tri1 {
+            
+        }
+        .tri2 {
+            background-color: #B84545;
+        }
+        .tri3 {
+            background-color: #45B872;
+        }
+        .tri4 {
+            background-color: #D4D551;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Tabas responsivas</h1>
+    <div id="container">
+        <table>
+            <colgroup>
+                <col class="tri1">
+                <col class="tri2" span="4">
+                <col class="tri3" span="4">
+                <col class="tri4" span="4">
+            </colgroup>
+            <caption>ARRECADADOS DOS MESES DO ANO</caption>
+            
+            <tr >
+                <th >dados</th>
+                <th scope="rowgroup">jan</th>
+                <th>fev</th>
+                <th>mar</th>
+                <th>abr</th>
+                <th >mai</th>
+                <th>jun</th>
+                <th>jul</th>
+                <th>ago</th>
+                <th>set</th>
+                <th>out</th>
+                <th>nov</th>
+                <th>dez</th>
+            </tr>
+            <tr>
+                <th rowspan="5">Reais</th>
+                <td>100</td>
+                <td>120</td>
+                <td>113</td>
+                <td>170</td>
+                <td>145</td>
+                <td>179</td>
+                <td>167</td>
+                <td>157</td>
+                <td>172</td>
+                <td>128</td>
+                <td>223</td>
+                <td>210</td>
+            </tr>
+            <tr>
+                <td>100</td>
+                <td>120</td>
+                <td>113</td>
+                <td>170</td>
+                <td>145</td>
+                <td>179</td>
+                <td>167</td>
+                <td>157</td>
+                <td>172</td>
+                <td>128</td>
+                <td>223</td>
+                <td>210</td>
+            </tr>
+            <tr>
+                <td>100</td>
+                <td>120</td>
+                <td>113</td>
+                <td>170</td>
+                <td>145</td>
+                <td>179</td>
+                <td>167</td>
+                <td>157</td>
+                <td>172</td>
+                <td>128</td>
+                <td>223</td>
+                <td>210</td>
+            </tr>
+            <tr>
+                <td>100</td>
+                <td>120</td>
+                <td>113</td>
+                <td>170</td>
+                <td>145</td>
+                <td>179</td>
+                <td>167</td>
+                <td>157</td>
+                <td>172</td>
+                <td>128</td>
+                <td>223</td>
+                <td>210</td>
+            </tr>
+            <tr>
+                <td>100</td>
+                <td>120</td>
+                <td>113</td>
+                <td>170</td>
+                <td>145</td>
+                <td>179</td>
+                <td>167</td>
+                <td>157</td>
+                <td>172</td>
+                <td>128</td>
+                <td>223</td>
+                <td>210</td>
+            </tr>
+            <tr>
+                <th colspan="12" style="text-align: left;">TOTAL</th>
+                <td>1868</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>output</title>
+</head>
+
+<body>
+    
+    <h1>output para somar</h1>
+    <form action="" method="get">
+        
+        <label for="nn1">numero 1: </label>
+        <input type="number" name="nn1" id="nn1" max="5" required oninput="somar()" ><br>
+        
+        <label for="nn2">numero 2: </label>
+        <input type="number" name="nn2" id="nn2" max="5" required oninput="somar()" ><br>
+        
+        <label for="soma">Soma: </label>
+        <output name="soma" id="soma">
+            0
+        </output>
+    </form>
+    
+    <script>
+        var n1 = document.querySelector('#nn1')
+        var n2 = document.querySelector('#nn2')
+        var soma = document.querySelector('#soma')
+        
+        function somar() {
+            
+            soma.innerHTML= Number(n1.value) + Number(n2.value)
+            
+        }
+        
+        
+    </script>
+
+</body>
+
+</html>

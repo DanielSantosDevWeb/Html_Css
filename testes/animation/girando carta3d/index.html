@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>gurando elemento</title>
+    
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+        }
+        
+        #carta {
+            border: 5px solid red;
+            display: flex;
+            justify-content: center;
+            transform-style: preserve-3d;
+            position: relative;
+            transition: 1s;
+        }
+        
+        .card {
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bolder;
+            color: white;
+            position: absolute;
+            backface-visibility: hidden;
+        }
+        
+        #frente {
+            background-color: #000872;
+            transform: rotateY(180deg);
+            
+        }
+        
+        #verso {
+            background-color: #720000;
+        }
+        
+        .flip {
+            transform: rotateY(180deg);
+        }
+        
+        
+    </style>
+    
+</head>
+
+<body>
+    
+    <div class="flip" id="carta" >
+        <div class="card" id="frente">
+            Frente
+        </div>
+        <div class="card" id="verso">
+            Verso
+        </div>
+    </div>
+    
+    <script>
+        var carta = document.getElementById('carta')
+        
+        function girar() {
+            //carta.setAttribute('class', 'flip')
+            carta.classList.toggle('flip')
+            console.log(carta.classList)
+        }
+        
+        carta.addEventListener('click', girar)
+    </script>
+</body>
+
+</html>

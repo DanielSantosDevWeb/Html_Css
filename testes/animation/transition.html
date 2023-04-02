@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Transition</title>
+    <style>
+        div {
+            background-color: darkred;
+            height: 300px;
+            width: 300px;
+            margin: auto;
+            
+            transition-property: background-color, border-radius ; /* define qual propiedade vai ser transisionada*/
+            transition-duration: 2s, 0.5s;
+            transition-timing-function: cubic-bezier(.2, .9,.8,.2); /*escala e tempo da animação*/
+            
+        }
+        
+        div:hover {
+            background-color: darkblue;
+            border-radius: 50%;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div>
+        
+    </div>
+
+</body>
+
+</html>

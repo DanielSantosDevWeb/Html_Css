@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+body {
+    background-color: #F9F9F9;
+}
+
+table {
+    width: 500px;
+}
+
+caption {
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 1.3em;
+    font-weight: bolder;
+    
+}
+
+
+td, th {
+    border: 1px solid black;
+    padding: 3px;
+}
+
+.bloco {
+    display: inline-block;
+}

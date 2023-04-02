@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Exemplos de caixas</title>
+    <style>
+        body {
+            font: bold 1.5em arial;
+        }
+        h1 {
+            background-color: lightblue;
+            height: 50px;
+            width: 200px;
+            border-width: 3px;
+            border-color: black;
+            border-style: solid;
+            display: block;
+            text-align: center;
+            margin: auto;
+            
+        }
+        p {
+            background: lightblue;
+        }
+        div {
+            background: lightblue;
+            font-size: 0.7em;
+        }
+        a {
+            display: block;
+            background: lightpink;
+            text-decoration: none;
+            font-weight: bolder;
+            color:white;
+            border: 1px solid black;
+            width: 40px;
+            margin: auto;
+            text-align: center;
+        }
+        .negrito {
+            font-weight: bolder;
+            text-decoration: underline;
+        }
+        div:hover > #link {
+            background-color: blue;
+            color: white;
+            font-weight: bolder
+        }
+        a::after {
+            content: " caguei"
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="titulo">Exemplos</h1>
+    
+    <p>Testando alguns modelos de caixas</p>
+    
+    <div>Aqui aprederemos que a cada elementos são considerados box-Level ou box-inline. Um <a href="" id="link">Link</a> eh considerado um box-inline e um <span class="negrito">Paragrafo</span> eh considerado um box-level</div>
+
+</body>
+
+</html> 

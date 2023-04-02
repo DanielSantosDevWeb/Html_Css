@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tela de login</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <h1>Fazer Cadastro</h1>
+    <h2>aa</h2>
+    <form action="cadastro.php" method="get" >
+        <fieldset>
+            <legend>User Login</legend>
+            <label for="username">User Name: </label>
+            <input type="text" name="username" id="username" minlength="4" maxlength="20" required><br>
+            <label for="telnumber">Numero: </label>
+            <input type="tel" name="telnumber" id="telnumber" pattern="^\d{2}-\d{8,9}$" required><br>
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" required><br>
+            <label for="password">Senha: </label>
+            <input type="password" name="password" id="password" value="" placeholder="senha" minlength="6" maxlength="16" required />
+            <input type="password" name="password" id="password" placeholder="confirma senha" minlength="6" maxlength="16" required>
+            
+        </fieldset>
+        <fieldset>
+            <legend>User infons</legend>
+            <div>
+                <input type="radio" name="sexo" id="sexomas">
+                <label for="sexomas">Masculino </label>
+                <input type="radio" name="sexo" id="sexofem">
+                <label for="sexofem">Feminino </label>
+            </div>
+            <div>
+                <label for="estados">Estados: </label>
+                <select name="estados" id="estados">
+                    <option value="">Selecione</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="PR">Pára </option>
+                    <option value="PB">Paraiba</option>
+                    <option value="MS">Mato Grosso do sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RS">Rio Grande do sul</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="Ce">Ceará </option>
+                    <option value="BA">Bahia</option>
+                </select> <br>
+                <label for="cep">Cep: </label>
+                <input type="tel" name="cep" id="cep" placeholder="00000-000" pattern="^\d{4}-\d{3}$" required>
+            </div>
+            <h3>Areas Da programação </h3>
+            <div>
+                <label for="ProgArea">Área: </label>
+                <input type="text" name="ProgArea" id="ProgArea" list="ProgList" >
+                <datalist id="ProgList" >
+                    <option value="Front-end">Front-end</option>
+                    <option value="back-end">Back-end</option>
+                    <option value="full-stack">Full-Srack</option>
+                    <option value="Estudando">Estudando </option>
+                </datalist>
+            </div>
+            <div>
+                <input type="checkbox" name="php" id="php">
+                <label for="php">Php</label>
+                <input type="checkbox" name="JavaScript" id="JavaScript">
+                <label for="JavaScript">JavaScript</label>
+                <input type="checkbox" name="html" id="html">
+                <label for="html">Html</label>
+                <input type="checkbox" name="ccs" id="ccs">
+                <label for="css">Css</label>
+                <input type="checkbox" name="Java" id="Java"> 
+                <label for="Java">Java</label><br>
+                <label for="text">Conte mais sobre: </label><br>
+                <textarea name="text" id="text" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <label for="github">Link para o seu github: </label>
+                <input type="url" name="github" id="github" value="" /><br>
+                <label for="fotoperfil">Foto para o perfil: </label>
+                <input type="file" name="fotoperfil" id="fotoperfil" value="foto de perfil" />
+            </div>
+        </fieldset>
+        <input type="submit" value="Enviar" >
+    </form>
+
+</body>
+
+</html>

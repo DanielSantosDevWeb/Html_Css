@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Links externos</title>
+</head>
+<body>
+    <h1>Links externos</h1>
+    
+    <p> aperte <a href="http://youtube.com" target="blank" rel="external" >aqui</a> para entrar no youtube </p>
+    
+    <p> aperte aqui para ir para a <a href="proximapag.html" rel="next"> Pagina dois</a></p>
+    
+    <p> <input type="button" value="site" onclick="location='proximapag.html'" ></p>
+    
+    <div>
+        <input type="button" value="site" onclick="site()" id="butao">
+    </div>
+    
+    <h1>links p download</h1>
+    
+    baixar <a href="download/Título.pdf" download="Título.pdf" >documentos</a> <!--- lista de media type --->
+    
+    baixar <a href="arquivoz.zip" download="arquivoz.zip">arquivo zip</a>
+    
+    <script>
+        
+        function site() {
+            
+            window.open('proximapag.html')
+        }
+        
+    </script>
+</body>
+</html>

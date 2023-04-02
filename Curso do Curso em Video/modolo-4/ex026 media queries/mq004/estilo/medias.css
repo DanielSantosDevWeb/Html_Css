@@ -1,0 +1,57 @@
+@media screen and (min-width: 700px) and (max-width: 1024px) {
+    
+    body {
+        background-image: url("../imagens/back-tablet.jpg");
+    }
+    
+    main {
+        max-width: 80vw;
+    }
+    
+    #tablet {
+        display: block;
+    }
+    
+    #phone {
+        display: none;
+    }
+    
+}
+
+@media screen and (min-width: 1024px) and (max-width:1366) {
+    
+    body {
+        background-image: url("../imagens/back-pc.jpg");
+    }
+    
+    main {
+        max-width: 70vw;
+    }
+    
+    #pc {
+        display: block;
+    }
+    #phone {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    
+    body {
+        background-image: url("../imagens/back-tv.jpg")
+    }
+    
+    main {
+        max-width: 1000px;
+    }
+    
+    #tv {
+        display: block;
+    }
+    
+    #phone {
+        display: none;
+    }
+    
+}

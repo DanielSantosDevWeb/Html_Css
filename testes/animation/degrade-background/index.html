@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Background animado</title>
+    <style>
+        body {
+            background: linear-gradient(45deg ,#A300DD,  #1F00DD,#7600FF, #4300FF, #5E00FF, #B600FF ) no-repeat;
+            background-size: 500vw 100vh;
+            
+           animation: backAnim 3s infinite;
+            
+        }
+        
+        @keyframes backAnim {
+            0% {
+                background-position-x: left;
+            }
+            50% {
+                background-position-x: right;
+            }
+            100% {
+                background-position-x: left;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Background animado</h1>
+</body>
+
+</html>

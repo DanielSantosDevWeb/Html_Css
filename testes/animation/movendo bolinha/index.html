@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bolinha pulando</title>
+    <style>
+        .container {
+            background-color: #000C95;
+            color: white;
+            width: 90vw;
+            height: 300px;
+            border-radius: 10px;
+            margin: auto;
+            display: flex;
+        }
+        
+        h1 {
+            display: block;
+            width: 100%;
+            text-align: center;
+            height: 50px;
+            animation: sumirBolinha 1s infinite;
+        }
+        
+        .bolinha {
+            color: black;
+            font-weight: bolder;
+            background-color: #FFFFFF;
+            width: 58px;
+            height: 50px;
+            border-radius: 40px;
+            overflow: hidden;
+            position: relative;
+            left: -150px;
+            top: 150px;
+            transition: all .3s linear;
+        }
+        
+        #pular {
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            font-weight: bolder;
+            font-size: 20px;
+            padding: 5px;
+            border: 2px solid black;
+            border-radius: 1000px;
+            height: 50px;
+            width: 200px;
+        }
+        
+        button {
+            width: 100px;
+            height: 40px;
+            border-radius: 20px;
+            border: 1px solid #081069;
+            margin: 10px auto;
+            
+        }
+        
+        .botoes {
+            display: grid;
+            grid-template-areas: 
+            "cima cima cima"
+            "esquerda sumir direita"
+            "baixo baixo baixo";
+        }
+        
+        #cima {
+            grid-area: cima;
+        }
+        
+        #direita {
+            grid-area: direita ;
+        }
+        
+        #baixo {
+            grid-area: baixo;
+        }
+        
+        #esquerda {
+            grid-area: esquerda;
+        }
+        
+        #sumir {
+            grid-area: sumir;
+        }
+        
+        @keyframes sumirBolinha {
+            0% {
+                color: blue;
+            }
+            50% {
+                color: red;
+            }
+            100% {
+                color: green;
+            }
+            
+        }
+        
+    </style>
+</head>
+
+<body>
+    
+    <main>
+        <section class="container">
+            <h1>bolinha pulando</h1>
+            <div class="bolinha" style="animation: 1s;"></div>
+        </section>
+        <section class="botoes">
+            <button class="btn" id="cima">cima</button>
+            <button class="btn" id="direita">direita</button>
+            <button class="btn" id="baixo">baixo</button>
+            <button class="btn" id="esquerda">esquerda</button>
+            <button class="btn" id="sumir">sumir</button>
+        </section>
+    </main>
+    
+    
+    
+    <script src="script.js">
+        
+        
+        /*btnUp.addEventListener('click', ()=> {
+            if (ball.style.animation == '') {
+                ball.style.animation = 'pulando 1s infinite'
+                btnUp.value ='Parar'
+            } else if ( ball.style.animation != '' ) {
+                ball.style.animation = ''
+                btnUp.value ='Pular'
+            }
+        })*/
+    </script>
+    
+
+</body>
+
+</html>

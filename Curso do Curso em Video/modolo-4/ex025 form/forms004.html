@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Email e Numeros</title>
+</head>
+
+<body>
+    
+    <h1>Email e Numeros</h1>
+    <form action="cadastro.php" method="get">
+        
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="name">Nome e Sobrenome: </label>
+                <input type="text" name="name" id="name" minlength="3" maxlength="25" required>
+            </p>
+            <p>
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" placeholder="usuario123@user.com" required>
+            </p>
+            <p>
+                <label for="cel">Telefone: </label>
+                <input type="tel" name="cel" id="cel" maxlength="11" minlength="8" placeholder="8888-8888" pattern="^\d{4,5}-\d{4}$">
+            </p>
+        </fieldset>
+        
+        <div>Estudar sobre RegEx</div>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+        
+    </form>
+    
+    
+
+</body>
+
+</html>

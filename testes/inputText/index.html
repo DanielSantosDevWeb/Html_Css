@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        
+        form {
+            width: 300px;
+            height: 500px;
+            border: 1px solid black;
+            text-align: center;
+            
+        }
+        
+        div {
+            position: relative;
+            width: 250px;
+            margin: 30px auto;
+            
+        }
+        
+        input {
+            width: 100%;
+            height: 50px;
+            padding: 10px;
+            font-size: 1.5em;
+        }
+        
+        span {
+            position: absolute ;
+            left: 0px;
+            margin: 10px;
+            font-size: 1.5em;
+            color: #C2C2C2;
+        }
+        
+        #textName:hover {
+            background-color: #0012DE;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <h1>Input Text</h1>
+        <div class="nome">
+            <input type="text" id="nome">
+            <span id="textName">Nome</span>
+        </div>
+        <div class="sobrenome">
+            <input type="text" name="" id="sobrenome">
+            <span>Sobrenome</span>
+        </div>
+    </form>
+</body>
+
+</html>

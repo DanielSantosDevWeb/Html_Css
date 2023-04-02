@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Select, datalist e textarea</title>
+</head>
+
+<body>
+    
+    <h1>Select, Datalist and Textarea</h1>
+    
+    <form action="">
+        <p>
+            <label for="estados">Estados: </label>
+            <select name="estados" id="estados">
+                
+                <option value="">Esculha um estado</option>
+                
+                <optgroup label="Nordeste">
+                    <option value="PB">Paraiba</option>
+                    <option value="RN">Rio Grande do norte</option>
+                    <option value="PE">Pernambuco</option>
+                </optgroup>
+                
+                <optgroup label="Suldeste">
+                    <option value="Rj">Rio de janeiro</option>
+                    <option value="SP">Sao paulo</option>
+                    <option value="Mg">Minas Gerais</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="prof">Profissão: </label>
+            <input type="text" name="prof" id="prof" list="lista">
+            <datalist id="lista">
+                <option value="coz"></option>
+                <option value="prog">progamador</option>
+                <option value="eng">engenheiro</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="textarea">Caixinha de Texto</label><br>
+            <textarea name="text" id="textarea" cols="30" rows="10"></textarea>
+        </p>
+    </form>
+    
+    
+    
+    
+    
+
+</body>
+
+</html>

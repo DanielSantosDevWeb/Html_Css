@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Idade</title>
+</head>
+
+<body>
+    <h1>Mostrar idade</h1>
+    <form action="" method="get">
+        
+        <label for="nascimento"> Data de nascimento: </label>
+        <input type="number" name="nascimento" id="nascimento" oninput="mostraridade()"><br>
+        
+        <label for="idade">Sua idade: </label>
+        <output id="idade" >0</output>
+        
+    </form>
+    
+    <script>
+        var Nascimento = document.querySelector('#nascimento')
+        var idade = document.querySelector('#idade')
+        
+        var date = new Date()
+        var anoatual = date.getFullYear()
+        
+        function mostraridade() {
+            if (Nascimento.value < 1900 || Nascimento.value > anoatual) {
+                idade.innerHTML='Data de nascimento invalida'
+            } else {
+                idade.innerHTML= Number(anoatual) - Number(Nascimento.value)
+            }
+        }
+    </script>
+
+</body>
+
+</html>

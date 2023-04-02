@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Site Responsivo com media queries</title>
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/media.css">
+    
+</head>
+
+<body onresize="mudouTam()">
+    
+    <header>
+        <h1 >Site responsivo com media queries</h1>
+        <nav>
+            <span id="teste">
+            <div class="menu"></div>
+            <div class="menu" ></div>
+            <div class="menu" ></div>
+            </span>
+            <ul id="lista">
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Compras</a></li>
+                <li><a href="#">Carrinho</a></li>
+                <li ><a href="#">LogOut</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+        <article>
+            <h3>Sites em media queries</h3>
+            
+            <p>A ideia de ter um mascote foi amadurecendo e a missão foi passada para uma profissional da área. A ilustradora Russa Irina Blok, também funcionária do Google, ficou com a missão de representar o pequeno robô de uma maneira mais agradável.A ideia de ter um mascote foi amadurecendo e a missão foi passada para uma profissional da área. A ilustradora Russa Irina Blok, também funcionária do Google, ficou com a missão de representar o pequeno robô de uma maneira mais agradável.</p>
+            
+            <p>A ideia de ter um mascote foi amadurecendo e a missão foi passada para uma profissional da área. A ilustradora Russa Irina Blok, também funcionária do Google, ficou com a missão de representar o pequeno robô de uma maneira mais agradável.</p>
+            
+            <p>A ideia de ter um mascote foi amadurecendo e a missão foi passada para uma profissional da área. A ilustradora Russa Irina Blok, também funcionária do Google, ficou com a missão de representar o pequeno robô de uma maneira mais agradável.A ideia de ter um mascote foi amadurecendo e a missão foi passada para uma profissional da área. A ilustradora Russa Irina Blok, também funcionária do Google, ficou com a missão de representar o pequeno robô de uma maneira mais agradável.</p>
+            <p>A ideia de ter um mascote foi amadurecendo e a missão foi passada para uma profissional da área. A ilustradora Russa Irina Blok, também funcionária do Google, ficou com a missão de representar o pequeno robô de uma maneira mais agradável.</p>
+            
+            <p>A ideia de ter um mascote foi amadurecendo e a missão foi passada para uma profissional da área. A ilustradora Russa Irina Blok, também funcionária do Google, ficou com a missão de representar o pequeno robô de uma maneira mais agradável.A ideia de ter um mascote foi amadurecendo e a missão foi passada para uma profissional da área. A ilustradora Russa Irina Blok, também funcionária do Google, ficou com a missão de representar o pequeno robô de uma maneira mais agradável.</p>
+        </article>
+    </main>
+    
+    <script>
+        var teste = document.getElementById('teste')
+        var lista = document.getElementById('lista')
+        
+        function clique() {
+            if ( lista.style.width == '' ) {
+                lista.style.width = '150px'
+                
+            } else if (lista.style.width == '150px') {
+                lista.style.width = ''
+            }
+        }
+        
+        function mudouTam() {
+            if (window.innerWidth >= 700) {
+                lista.style.width = '100%'
+            } else {
+                lista.style.width = ''
+            }
+        }
+        
+        teste.addEventListener('click', clique)
+    </script>
+
+</body>
+
+</html>

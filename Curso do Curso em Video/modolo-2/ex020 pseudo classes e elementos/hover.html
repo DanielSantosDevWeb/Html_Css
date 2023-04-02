@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Testando hovers</title>
+    <style>
+        #d3 {
+            display: inline-block;
+            
+            text-align: center;
+            border: 1px solid #000000;
+            height: 220px;
+            width: 220px;
+            margin: auto;
+        }
+        #d3 > p {
+            display: none;
+        }
+        #d3:hover > p {
+            display: block;
+        }
+        
+    </style>
+    
+    
+</head>
+
+<body>
+    
+    <div id="d3">
+        MENU
+        <p id="menu"> 
+             Item 1
+        </p>
+        <p>
+            Item 2
+        </p>
+        <p>
+            Item 3
+        </p>
+    </div>
+    
+</body>
+
+</html>

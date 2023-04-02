@@ -1,0 +1,26 @@
+body {
+    background-color: #E9E9E9;
+}
+
+caption {
+    border: 1px solid black;
+    font-size: 1.5em;
+    font-weight: bolder;
+    padding: 3px;
+}
+
+table {
+    width:  370px;
+    border-collapse: collapse;
+}
+
+.bgsmoke , thead {
+    background-color: #878787;
+    color: white;
+}
+
+td , th {
+    padding: 5px;
+    
+    border: 1px solid black;
+}
